@@ -100,3 +100,13 @@ footer{
     background:linear-gradient(to right,#44749d , #c6d4e1, #ffffff);
     text-align: center;
 }
+.button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
