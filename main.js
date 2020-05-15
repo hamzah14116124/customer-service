@@ -96,7 +96,7 @@ function botVoice(message){
     }if(message.includes('about seller')){
         speech.text = "Okay, please fill in the seller form";
         window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/pembayaran.html";
-    }}if(message.includes('about courier')){
+    }if(message.includes('about courier')){
         speech.text = "Okay, please fill in the courier form";
         window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/kurir.html";
     }
