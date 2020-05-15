@@ -65,30 +65,30 @@ function botVoice(message){
     }
     if(message.includes('I forgot password')){
         speech.text = "Okay, please fill in the reset account form";
-        
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/email.html";
     }
     if(message.includes('I want to delete account')){
         speech.text = "Are you sure?";
     }
     if(message.includes('I want to verify account')){
         speech.text = "Okay, please fill in the account verification form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/email.html";
     }
     if(message.includes('transfer has not entered yet')){
         speech.text = "Sorry for the inconvenience, can you inform me on whose behalf?";
-    }
-    if(message.includes('Account balance has not been filled')){
+    }if(message.includes('john')){
+        speech.text = "okay, mr.john. please fill in your problem to our email.";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/email.html";
+    }if(message.includes('Account balance has not been filled')){
         speech.text = "Yes, sir, we will first check";
     }
-    if(message.includes('cash purchases')){
+    if(message.includes('cash purchases problem')){
         speech.text = "Yes, sir, we will first check";
     }
     if(message.includes('sure')){
-        speech.text = "Okay, we will delete your account";
-    }
-    if(message.includes('I want to cancel order')){
-        speech.text = "Okay, please fill in the order cancellation form";
-    }
-    if(message.includes('hello')){
+        speech.text = "Okay, we will delete your account. can you fill this problem to our email";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/email.html";
+    }if(message.includes('hello')){
         speech.text = "hello, how i can assits you today sir";
     }if(message.includes('about transfer')){
         speech.text = "Okay, please fill in the transfer form";
