@@ -33,7 +33,7 @@ function addBotText(text){
 }
 function botVoice(message){
     const speech = new SpeechSynthesisUtterance();
-    speech.text = "Sorry, i did not understand that.";
+    speech.text = "Sorry, i did not understand that. can you repeat again?";
     
     if(message.includes('how are you')){
         speech.text = "I am fine, thanks. How are you?";
@@ -91,7 +91,14 @@ function botVoice(message){
     if(message.includes('hello')){
         speech.text = "hello, how i can assits you today sir";
     }if(message.includes('about transfer')){
-        speech.text = "Okay, please fill in the order cancellation form";
+        speech.text = "Okay, please fill in the transfer form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/pembayaran.html";
+    }if(message.includes('about seller')){
+        speech.text = "Okay, please fill in the seller form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/pembayaran.html";
+    }}if(message.includes('about courier')){
+        speech.text = "Okay, please fill in the courier form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/kurir.html";
     }
     speech.volume = 1;
     speech.rate = 1;
