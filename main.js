@@ -49,18 +49,23 @@ function botVoice(message){
     }
     if(message.includes('order has not arrived')){
         speech.text = "Okay, we will check your shipping";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/produk.html";
     }
     if(message.includes('order has damaged')){
         speech.text = "Okay, please fill out the item damage form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/produk.html";
     }
     if(message.includes('order did not match')){
         speech.text = "Okay, please fill in the return form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/produk.html";
     }
     if(message.includes('I want to cancel order')){
         speech.text = "Okay, please fill in the order cancellation form";
+        window.location.href = "file:///C:/Users/hamzah/Documents/GitHub/customer-service/Aziz/produk.html";
     }
     if(message.includes('I forgot password')){
         speech.text = "Okay, please fill in the reset account form";
+        
     }
     if(message.includes('I want to delete account')){
         speech.text = "Are you sure?";
@@ -81,6 +86,11 @@ function botVoice(message){
         speech.text = "Okay, we will delete your account";
     }
     if(message.includes('I want to cancel order')){
+        speech.text = "Okay, please fill in the order cancellation form";
+    }
+    if(message.includes('hello')){
+        speech.text = "hello, how i can assits you today sir";
+    }if(message.includes('about transfer')){
         speech.text = "Okay, please fill in the order cancellation form";
     }
     speech.volume = 1;

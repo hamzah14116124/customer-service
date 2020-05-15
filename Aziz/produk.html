@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+</head>
+
+<body>
+	<div class="sidebar">
+		<a href="penjual.html">Laporkan Penjual</a>
+		<a href="produk.html">Laporkan Produk</a>
+		<a href="kurir.html">Laporkan Kurir</a>
+		<a href="pembayaran.html">Laporkan Pembayaran</a>
+	</div>
+	<div class="content">
+		<div class="judul"><center>Form Pelaporan Keluhan Pelanggan</center></div>
+	<div class="container">
+		
+		<form action="action_page.php">
+		  <div class="row">
+			<div class="col-75">
+				<input type="text" id="fname" name="firstname" placeholder="Nama Anda">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-75">
+				<input type="text" id="lname" name="lastname" placeholder="Nama Toko/Penjual">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-75">
+				<input type="text" id="lname" name="lastname" placeholder="Nama Produk">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-75">
+				<textarea id="subject" name="subject" placeholder="Tuliskan Keluhan Anda" style="height:200px"></textarea>
+			</div>
+		  </div>
+		  <div class="row">
+			  <div class="col-75">
+				<input type="submit" value="Kirim">
+			  </div>
+		  </div>
+		</form>
+	  </div> 
+	</div>
+</body>
+</html>
